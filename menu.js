@@ -1,10 +1,10 @@
 var pageTree = [
     {
-        "O nas": "about.html"
+        "O nas": "index.html"
     },
     {
         "Hry": {
-            "Jozefova hra": "game.html",
+            "Jozefova hra": "jozef_game.html",
             "Kristianova hra": "chriss_puzzle.html",
             "Petrova hra": ""
         }
