@@ -1,70 +1,70 @@
 var pageTree = [
     {
-        "Home": "index.html"
+        "O nas": "about.html"
     },
     {
         "Hry": {
-            "game 1":"chriss_puzzle.html",
-            "game 2":"chriss_puzzle.html",
-            "game 3":"chriss_puzzle.html"
+            "Jozefova hra": "game.html",
+            "Kristianova hra": "chriss_puzzle.html",
+            "Petrova hra": ""
         }
     },
     {
         "Spolocne zadanie": {
-            "text":"chriss_puzzle.html",
-            "game ":{
-                "game 2":"chriss_puzzle.html",
-                "game 3":"chriss_puzzle.html"
+            "text": "articles.html",
+            "game ": {
+                "game 2": "chriss_puzzle.html",
+                "game 3": "chriss_puzzle.html"
             }
         }
     }
 ]
 
-function menu(){
+function menu() {
     var header = document.getElementsByTagName("header")[0];
     var ul = document.createElement("ul");
 
-    pageTree.forEach(function(element){
+    pageTree.forEach(function (element) {
         var li = document.createElement("li");
         var a = document.createElement("a");
 
-        for(var data in element){
+        for (var data in element) {
             a.innerText = data;
-            if(typeof element[data] == "string"){
-                a.setAttribute("href",element[data]);
+            if (typeof element[data] == "string") {
+                a.setAttribute("href", element[data]);
                 li.appendChild(a);
-            }else{
+            } else {
                 //a.className = "dropDown";
                 //a.setAttribute("href",".item");
                 li.appendChild(a);
                 li.className = "dropDown";
                 var subUl = document.createElement("ul");
-                subUl.className="item";
+                subUl.className = "item";
 
-                for(var subData in element[data]){
+                for (var subData in element[data]) {
 
-                    if(typeof element[data][subData] == "string"){
+                    if (typeof element[data][subData] == "string") {
                         var subli = document.createElement("li");
                         //subli.className="item";
                         var suba = document.createElement("a");
-                        suba.setAttribute("href",element[data][subData]);
+                        suba.setAttribute("href", element[data][subData]);
                         suba.innerText = subData;
                         subli.appendChild(suba);
                         subUl.appendChild(subli);
-                    }else{
+                    } else {
                         var tmpli = document.createElement("li");
                         tmpli.innerText = subData;
-                        tmpli.className="item";
+                        tmpli.className = "item";
                         subUl.appendChild(tmpli);
 
                         var subsubUl = document.createElement("ul");
-                        subsubUl.className="sub-item";
+                        subsubUl.className = "sub-item";
 
-                        for(var subsubData in element[data][subData]){
+                        for (var subsubData in element[data][subData]) {
                             var subsubli = document.createElement("li");
                             //subsubli.className="sub-item";
                             var suba = document.createElement("a");
-                            suba.setAttribute("href",element[data][subData][subsubData]);
+                            suba.setAttribute("href", element[data][subData][subsubData]);
                             suba.innerText = subsubData;
                             subsubli.appendChild(suba);
                             subsubUl.appendChild(subsubli);
@@ -78,7 +78,7 @@ function menu(){
         ul.appendChild(li);
     })
     var nav = document.createElement("div");
-    nav.className="nav";
+    nav.className = "nav";
     nav.appendChild(ul);
     header.appendChild(nav);
 }

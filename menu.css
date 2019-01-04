@@ -33,3 +33,9 @@
 .nav a{
     text-decoration: none;
 }
+
+
+body {
+    background: linear-gradient(#437f97, #6f1a07);
+    min-height: 100vh;
+}

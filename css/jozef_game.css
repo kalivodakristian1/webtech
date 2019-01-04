@@ -1,0 +1,89 @@
+/* ===== game ===== */
+.draggable {
+  position: absolute;
+  cursor: move;
+  z-index: 10px;
+  transform: scale(0.3)
+}
+
+#nr, #zi, #ba, #tr, #tre, #bb, #ko, #ps {
+  top: 210px;
+  z-index: 10;
+}
+
+#ko {
+  left: 100px;
+}
+
+#zi {
+  left: 280px;
+}
+
+#ps {
+  left: 350px;
+}
+
+#tr {
+  left: 800px;
+}
+
+#nr {
+  left: 400px;
+}
+
+#bb {
+  left: 600px;
+}
+
+#tre { 
+  left: 850px
+}
+
+.fixedImage{
+  position: absolute;
+}
+
+#ba-b {
+  top: 700px;
+  left: 152px;
+}
+
+#tr-b {
+  top: 628px;
+  left: 190px;
+}
+
+#nr-b {
+  top: 692px;
+  left: 315px;
+}
+
+#tre-b {
+  top: 510px;
+  left: 268px;
+}
+
+#bb-b {
+  top: 645px;
+  left: 493px;
+}
+
+#zi-b {
+  top: 440px;
+  left: 490px;
+}
+
+#ps-b {
+  top: 508px;
+  left: 792px;
+}
+
+#ko-b {
+  top: 638px;
+  left: 845px;
+}
+
+.draggableContainer {
+  position: absolute;
+}
+

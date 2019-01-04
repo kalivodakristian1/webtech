@@ -1,0 +1,26 @@
+.column {
+  width: 33%;
+  display: inline-block;
+  height: 100%;
+  padding: 10px;
+}
+
+.column:nth-child(1){
+  background-color: green;
+}
+
+.column:nth-child(2){
+  background-color: blue;
+}
+
+.column:nth-child(3){
+  background-color: red;
+}
+
+.columnContainer {
+  display: flex;
+}
+
+.column a {
+  display: block;
+}
