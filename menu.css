@@ -1,0 +1,35 @@
+.item, .sub-item{
+    /*display:none;*/
+    visibility: hidden;
+}
+
+.dropDown:hover{
+}
+
+.dropDown:hover .item{
+    /*display: block;*/
+    visibility: visible;
+}
+
+.item:hover .sub-item{
+    /*display: block;*/
+    visibility: visible;
+}
+.nav ul, .nav li{
+    list-style: none;
+    text-decoration: none;
+}
+.nav{
+    height:100px;
+    background-color: aquamarine;
+}
+.nav > ul > li{
+    float:left;
+    width:180px;
+}
+/*.nav{
+    background-color: chartreuse;
+}*/
+.nav a{
+    text-decoration: none;
+}
